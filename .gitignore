@@ -1,0 +1,10 @@
+# Xcode
+DerivedData/
+*.xcworkspace
+*.xcuserstate
+*.xcuserdatad/
+build/
+Pods/
+
+# macOS
+.DS_Store
