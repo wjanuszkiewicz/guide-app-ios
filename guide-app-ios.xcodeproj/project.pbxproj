@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		25E20AB8E64FCD192435F306 /* Pods_guide_app_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2352C28ACB60CF692CB180CC /* Pods_guide_app_ios.framework */; };
 		CC07CEAC2DD3264F000C0DAC /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CC248EFC2DD25CAA00FCC588 /* FirebaseAnalytics */; };
 		CC07CEAD2DD3264F000C0DAC /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CC248EFE2DD25CAA00FCC588 /* FirebaseAuth */; };
 		CC07CEAE2DD3264F000C0DAC /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = CC248F002DD25CAA00FCC588 /* FirebaseCore */; };
 		CC07CEAF2DD3264F000C0DAC /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CC248F022DD25CAA00FCC588 /* FirebaseFirestore */; };
-		CC07CEB02DD3264F000C0DAC /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CC248F042DD25CAA00FCC588 /* FirebaseStorage */; };
-		CC091F142DD4DD720047C0B9 /* MapLibre.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC091F132DD4DD720047C0B9 /* MapLibre.xcframework */; };
+		CC07CEB02DD3264F000C0DAC /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CC248F042DD25CAA00FCC588 /* FirebaseStorage */; settings = {ATTRIBUTES = (Required, ); }; };
+		CC2ABF942DDA30E3001522FF /* Localizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = CC2ABF912DDA275D001522FF /* Localizable.strings */; };
 		CC56132C2DD36A03007A66BE /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC56132B2DD369FB007A66BE /* MapScreen.swift */; };
+		CC73C8C42DD90EBE001DE91C /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC73C8C32DD90EBC001DE91C /* OnboardingViewModel.swift */; };
+		CC73C8C62DD90F17001DE91C /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC73C8C52DD90F15001DE91C /* AuthService.swift */; };
 		CCB2674D2DD275DE00A3A325 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB2673B2DD275DE00A3A325 /* MapViewModel.swift */; };
 		CCB2674E2DD275DE00A3A325 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB267412DD275DE00A3A325 /* MapView.swift */; };
 		CCB2674F2DD275DE00A3A325 /* guide_app_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB2672B2DD275DE00A3A325 /* guide_app_iosApp.swift */; };
@@ -35,6 +36,7 @@
 		CCB2675F2DD275DE00A3A325 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB267432DD275DE00A3A325 /* ProfileView.swift */; };
 		CCB267602DD275DE00A3A325 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB2673F2DD275DE00A3A325 /* HomeView.swift */; };
 		CCB267612DD275DE00A3A325 /* GuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB267262DD275DE00A3A325 /* GuideApp.swift */; };
+		CCB7B5792DD7AC5000916344 /* MapLibre in Frameworks */ = {isa = PBXBuildFile; productRef = CCB7B5782DD7AC5000916344 /* MapLibre */; };
 		CCD6D2E72DD5043E003F1CD2 /* GoogleService-Info.plist in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = CCD6D2E52DD50383003F1CD2 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -53,11 +55,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2352C28ACB60CF692CB180CC /* Pods_guide_app_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_guide_app_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		753ED23E1AD3146A81CACB91 /* Pods-guide-app-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-guide-app-ios.debug.xcconfig"; path = "Target Support Files/Pods-guide-app-ios/Pods-guide-app-ios.debug.xcconfig"; sourceTree = "<group>"; };
-		CC091F132DD4DD720047C0B9 /* MapLibre.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MapLibre.xcframework; path = Pods/MapLibre/MapLibre.xcframework; sourceTree = "<group>"; };
 		CC248EEB2DD257E000FCC588 /* guide-app-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "guide-app-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC2ABF922DDA275D001522FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CC2ABF932DDA2760001522FF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CC56132B2DD369FB007A66BE /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
+		CC73C8C32DD90EBC001DE91C /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		CC73C8C52DD90F15001DE91C /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		CC9886962DD7C70E0008D1A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCB267252DD275DE00A3A325 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCB267262DD275DE00A3A325 /* GuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideApp.swift; sourceTree = "<group>"; };
 		CCB267282DD275DE00A3A325 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,7 +71,6 @@
 		CCB2672D2DD275DE00A3A325 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		CCB2672E2DD275DE00A3A325 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CCB267302DD275DE00A3A325 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		CCB267312DD275DE00A3A325 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		CCB267332DD275DE00A3A325 /* AudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
 		CCB267342DD275DE00A3A325 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 		CCB267352DD275DE00A3A325 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
@@ -82,10 +85,16 @@
 		CCB267432DD275DE00A3A325 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		CCB267452DD275DE00A3A325 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		CCB267472DD275DE00A3A325 /* ToursView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursView.swift; sourceTree = "<group>"; };
-		CCB9F2FD2DD4DA0D0043C004 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CCD6D2E52DD50383003F1CD2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		CD3E8388D67DFCD14138C55B /* Pods-guide-app-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-guide-app-ios.release.xcconfig"; path = "Target Support Files/Pods-guide-app-ios/Pods-guide-app-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CC73C8B62DD90DBA001DE91C /* Auth */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Auth;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CC248EE82DD257E000FCC588 /* Frameworks */ = {
@@ -96,29 +105,17 @@
 				CC07CEAF2DD3264F000C0DAC /* FirebaseFirestore in Frameworks */,
 				CC07CEAE2DD3264F000C0DAC /* FirebaseCore in Frameworks */,
 				CC07CEAD2DD3264F000C0DAC /* FirebaseAuth in Frameworks */,
+				CCB7B5792DD7AC5000916344 /* MapLibre in Frameworks */,
 				CC07CEAC2DD3264F000C0DAC /* FirebaseAnalytics in Frameworks */,
-				CC091F142DD4DD720047C0B9 /* MapLibre.xcframework in Frameworks */,
-				25E20AB8E64FCD192435F306 /* Pods_guide_app_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1142729FF365FBF9A99BCA33 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				753ED23E1AD3146A81CACB91 /* Pods-guide-app-ios.debug.xcconfig */,
-				CD3E8388D67DFCD14138C55B /* Pods-guide-app-ios.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		C0E7D3922C0A027BAE111608 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CC091F132DD4DD720047C0B9 /* MapLibre.xcframework */,
-				2352C28ACB60CF692CB180CC /* Pods_guide_app_ios.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,7 +123,7 @@
 		CC248EE22DD257E000FCC588 = {
 			isa = PBXGroup;
 			children = (
-				CCB9F2FD2DD4DA0D0043C004 /* Podfile */,
+				CC9886962DD7C70E0008D1A0 /* Info.plist */,
 				CCB267272DD275DE00A3A325 /* App */,
 				CCB267282DD275DE00A3A325 /* Assets.xcassets */,
 				CCB267292DD275DE00A3A325 /* ContentView.swift */,
@@ -140,7 +137,6 @@
 				CCB2673E2DD275DE00A3A325 /* ViewModels */,
 				CCB2674A2DD275DE00A3A325 /* Views */,
 				CC248EEC2DD257E000FCC588 /* Products */,
-				1142729FF365FBF9A99BCA33 /* Pods */,
 				C0E7D3922C0A027BAE111608 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -175,7 +171,7 @@
 		CCB267322DD275DE00A3A325 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CCB267312DD275DE00A3A325 /* Localizable.strings */,
+				CC2ABF912DDA275D001522FF /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -183,6 +179,7 @@
 		CCB267362DD275DE00A3A325 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				CC73C8C52DD90F15001DE91C /* AuthService.swift */,
 				CCB267332DD275DE00A3A325 /* AudioService.swift */,
 				CCB267342DD275DE00A3A325 /* FirebaseService.swift */,
 				CCB267352DD275DE00A3A325 /* LocationService.swift */,
@@ -202,6 +199,7 @@
 		CCB2673E2DD275DE00A3A325 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				CC73C8C32DD90EBC001DE91C /* OnboardingViewModel.swift */,
 				CCB2673A2DD275DE00A3A325 /* HomeViewModel.swift */,
 				CCB2673B2DD275DE00A3A325 /* MapViewModel.swift */,
 				CCB2673C2DD275DE00A3A325 /* ProfileViewModel.swift */,
@@ -254,6 +252,7 @@
 		CCB2674A2DD275DE00A3A325 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CC73C8B62DD90DBA001DE91C /* Auth */,
 				CCB267402DD275DE00A3A325 /* Home */,
 				CCB267422DD275DE00A3A325 /* Map */,
 				CCB267442DD275DE00A3A325 /* Profile */,
@@ -277,16 +276,16 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC248EF62DD257E300FCC588 /* Build configuration list for PBXNativeTarget "guide-app-ios" */;
 			buildPhases = (
-				6C1D22F79730C768C0B1751F /* [CP] Check Pods Manifest.lock */,
 				CC248EE72DD257E000FCC588 /* Sources */,
 				CC248EE82DD257E000FCC588 /* Frameworks */,
-				CCE2B5722DD4ED9200A3FA88 /* Unquarantine Frameworks */,
-				E3612536076D29BD851C4D74 /* [CP] Embed Pods Frameworks */,
 				CCD6D2E62DD5041D003F1CD2 /* Copy Bundle Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CC73C8B62DD90DBA001DE91C /* Auth */,
 			);
 			name = "guide-app-ios";
 			packageProductDependencies = (
@@ -295,6 +294,7 @@
 				CC248F002DD25CAA00FCC588 /* FirebaseCore */,
 				CC248F022DD25CAA00FCC588 /* FirebaseFirestore */,
 				CC248F042DD25CAA00FCC588 /* FirebaseStorage */,
+				CCB7B5782DD7AC5000916344 /* MapLibre */,
 			);
 			productName = "guide-app-ios";
 			productReference = CC248EEB2DD257E000FCC588 /* guide-app-ios.app */;
@@ -321,11 +321,13 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = CC248EE22DD257E000FCC588;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				CC248EFB2DD25CAA00FCC588 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				CC37FC882DD7AB4C0002061A /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CC248EEC2DD257E000FCC588 /* Products */;
@@ -343,78 +345,12 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		6C1D22F79730C768C0B1751F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-guide-app-ios-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CCE2B5722DD4ED9200A3FA88 /* Unquarantine Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}",
-				"${DERIVED_DATA_DIR}/${PROJECT_NAME}-*/Build/Intermediates.noindex/Pods.build/${CONFIGURATION}-iphoneos/XCFrameworkIntermediates\n",
-			);
-			name = "Unquarantine Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/unquarantine.marker\n",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ -d \"${PODS_ROOT}\" ]; then\n  find \"${PODS_ROOT}\" -name '*.framework' \\\n       -exec xattr -d -r com.apple.quarantine \"{}\" \\; 2>/dev/null || true\nfi\n\nif [ -d \"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}\" ]; then\n  find \"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}\" -name '*.framework' \\\n       -exec xattr -d -r com.apple.quarantine \"{}\" \\; 2>/dev/null || true\nfi\ntouch \"${TARGET_BUILD_DIR}/unquarantine.marker\"\n\n\n\n";
-		};
-		E3612536076D29BD851C4D74 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-guide-app-ios/Pods-guide-app-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-guide-app-ios/Pods-guide-app-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-guide-app-ios/Pods-guide-app-ios-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		CC248EE72DD257E000FCC588 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC2ABF942DDA30E3001522FF /* Localizable.strings in Sources */,
 				CCB2674D2DD275DE00A3A325 /* MapViewModel.swift in Sources */,
 				CCB2674E2DD275DE00A3A325 /* MapView.swift in Sources */,
 				CCB2674F2DD275DE00A3A325 /* guide_app_iosApp.swift in Sources */,
@@ -432,7 +368,9 @@
 				CCB2675A2DD275DE00A3A325 /* Extensions.swift in Sources */,
 				CCB2675B2DD275DE00A3A325 /* AudioService.swift in Sources */,
 				CCB2675D2DD275DE00A3A325 /* ToursViewModel.swift in Sources */,
+				CC73C8C42DD90EBE001DE91C /* OnboardingViewModel.swift in Sources */,
 				CCB2675E2DD275DE00A3A325 /* AppDelegate.swift in Sources */,
+				CC73C8C62DD90F17001DE91C /* AuthService.swift in Sources */,
 				CCB2675F2DD275DE00A3A325 /* ProfileView.swift in Sources */,
 				CCB267602DD275DE00A3A325 /* HomeView.swift in Sources */,
 				CCB267612DD275DE00A3A325 /* GuideApp.swift in Sources */,
@@ -440,6 +378,18 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CC2ABF912DDA275D001522FF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC2ABF922DDA275D001522FF /* en */,
+				CC2ABF932DDA2760001522FF /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CC248EF42DD257E300FCC588 /* Debug */ = {
@@ -565,7 +515,6 @@
 		};
 		CC248EF72DD257E300FCC588 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 753ED23E1AD3146A81CACB91 /* Pods-guide-app-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -575,11 +524,13 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "/Users/gus/Developer/guide-app-ios/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_PREPROCESS = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -595,7 +546,6 @@
 		};
 		CC248EF82DD257E300FCC588 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD3E8388D67DFCD14138C55B /* Pods-guide-app-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -605,11 +555,13 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "/Users/gus/Developer/guide-app-ios/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_PREPROCESS = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -655,6 +607,14 @@
 				minimumVersion = 11.12.0;
 			};
 		};
+		CC37FC882DD7AB4C0002061A /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maplibre/maplibre-gl-native-distribution.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.14.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -682,6 +642,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CC248EFB2DD25CAA00FCC588 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		CCB7B5782DD7AC5000916344 /* MapLibre */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC37FC882DD7AB4C0002061A /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */;
+			productName = MapLibre;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

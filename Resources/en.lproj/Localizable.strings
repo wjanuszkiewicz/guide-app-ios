@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  guide-app-ios
+
+  Created by Владислав Янушкевич on 18.05.25.
+  
+*/
+auth_title = "Create a profile to unlock more features";
+auth_description = "Save favorite places, routes, and unlock exclusive tours.";
+
+auth_email = "Sign in with Email";
+auth_google = "Sign in with Google";
+auth_apple = "Sign in with Apple";
+auth_phone = "Phone";
+auth_skip = "Skip";
+auth_back = "Back";
+auth_loading = "Loading...";
+auth_error = "Something went wrong. Please try again.";
+auth_success = "Signed in successfully!";
+auth_continue = "Continue";
+auth_sign_out = "Sign out";
+auth_success = "Anonymous sign-in successful";
+auth_error = "Anonymous sign-in failed";
+auth_reload_failed = "Failed to reload user";
+auth_already_signed = "User already signed in";
+
+profile_title = "Profile";
+profile_sign_in = "Sign in or create a profile";
+profile_uid = "Your ID: %@";

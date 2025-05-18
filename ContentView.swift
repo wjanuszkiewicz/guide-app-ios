@@ -5,15 +5,21 @@
 //  Created by Владислав Янушкевич on 12.05.25.
 //
 
-//  ContentView.swift
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("hasSeenAuth") private var hasSeenAuth = false
+
     var body: some View {
         TabBarView()
             .preferredColorScheme(.light)
+            .fullScreenCover(isPresented: .constant(!hasSeenAuth)) {
+                OnboardingView()
+            }
     }
 }
 
-#Preview { ContentView() }
+#Preview {
+    ContentView()
+}
 
