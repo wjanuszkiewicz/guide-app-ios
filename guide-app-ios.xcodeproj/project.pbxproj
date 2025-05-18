@@ -58,6 +58,7 @@
 		CC248EEB2DD257E000FCC588 /* guide-app-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "guide-app-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2ABF922DDA275D001522FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CC2ABF932DDA2760001522FF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CC2ABF952DDA3F6C001522FF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		CC56132B2DD369FB007A66BE /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
 		CC73C8C32DD90EBC001DE91C /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		CC73C8C52DD90F15001DE91C /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -123,6 +124,8 @@
 		CC248EE22DD257E000FCC588 = {
 			isa = PBXGroup;
 			children = (
+				CC2ABF952DDA3F6C001522FF /* .gitignore */,
+				CCD6D2E52DD50383003F1CD2 /* GoogleService-Info.plist */,
 				CC9886962DD7C70E0008D1A0 /* Info.plist */,
 				CCB267272DD275DE00A3A325 /* App */,
 				CCB267282DD275DE00A3A325 /* Assets.xcassets */,
@@ -152,7 +155,6 @@
 		CCB267272DD275DE00A3A325 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				CCD6D2E52DD50383003F1CD2 /* GoogleService-Info.plist */,
 				CCB267252DD275DE00A3A325 /* AppDelegate.swift */,
 				CCB267262DD275DE00A3A325 /* GuideApp.swift */,
 			);
