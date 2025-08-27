@@ -19,8 +19,8 @@ auth_error = "Something went wrong. Please try again.";
 auth_success = "Signed in successfully!";
 auth_continue = "Continue";
 auth_sign_out = "Sign out";
-auth_success = "Anonymous sign-in successful";
-auth_error = "Anonymous sign-in failed";
+auth_success_anonymous = "Anonymous sign-in successful";
+auth_error_anonymous = "Anonymous sign-in failed";
 auth_reload_failed = "Failed to reload user";
 auth_already_signed = "User already signed in";
 
