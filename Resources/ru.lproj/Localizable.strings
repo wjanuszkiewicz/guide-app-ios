@@ -19,8 +19,8 @@ auth_error = "Ошибка. Повторите позже.";
 auth_success = "Вход выполнен успешно!";
 auth_continue = "Продолжить";
 auth_sign_out = "Выйти";
-auth_success = "Анонимный вход выполнен";
-auth_error = "Ошибка анонимного входа";
+auth_success_anonymous = "Анонимный вход выполнен";
+auth_error_anonymous = "Ошибка анонимного входа";
 auth_reload_failed = "Ошибка обновления пользователя";
 auth_already_signed = "Пользователь уже авторизован";
 
